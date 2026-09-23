@@ -1,8 +1,14 @@
 # Changelog
 
+## 2026.9.17
+
+### Changed
+- judge writes to `./judge/<ts>.md|html` in the project the question was asked from, instead of `.claude/council-cache/`. `/judge/` is gitignored.
+
 ## 2026.9.16
 
 ### Added
+- `report-outputs` skill: on "보고해줘", builds a result-first HTML report (frontend-design → artifact-design → plain fallback) and publishes it as an Artifact.
 - `context-init`, `context-engineering`, `loop-engineering` skills imported unchanged from zkfmapf123/context_skills v0.2.0. `/context-init` is now `/common:context-init`.
 
 ## 2026.9.15

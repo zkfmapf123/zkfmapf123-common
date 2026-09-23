@@ -87,10 +87,10 @@ before synthesizing; a failed member is noted and skipped.
 ## Step 5: Save the transcript
 
 ```bash
-mkdir -p .claude/council-cache
+mkdir -p judge
 ```
 
-Write `.claude/council-cache/judge-{UNIX_TIMESTAMP}.md` with exactly this
+Write `judge/{UNIX_TIMESTAMP}.md` with exactly this
 shape (the report template keys off the `## 🗳️` and `## Synthesis` headers):
 
 ```
@@ -137,14 +137,14 @@ In chat, do NOT paste the whole transcript. Show:
 1. The banner (one line).
 2. One line per member: `🗳️ {Role name} · {confidence} — {Position, trimmed to one sentence}`
 3. The full `## Synthesis` section.
-4. `💾 .claude/council-cache/judge-{TS}.md` and, after Step 7, the artifact link.
+4. `💾 judge/{TS}.md` and, after Step 7, the artifact link.
 
 ## Step 7: Publish the report
 
 Skip when `--no-artifact` was passed.
 
 ```bash
-bash ${CLAUDE_PLUGIN_ROOT}/skills/judge/build-report.sh .claude/council-cache/judge-{TS}.md
+bash ${CLAUDE_PLUGIN_ROOT}/skills/judge/build-report.sh judge/{TS}.md
 ```
 
 That prints the `.html` path (the markdown dropped into a fixed template; no

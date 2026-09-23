@@ -1,5 +1,5 @@
-# Council output
-.claude/council-cache/
+# judge transcripts + reports
+/judge/
 
 # Local per-developer settings
 .claude/*.local.*
@@ -10,3 +10,6 @@ CLAUDE.local.md
 *.swp
 *.swo
 *~
+
+# Report pages
+.claude/reports/

@@ -1,7 +1,7 @@
 ---
 description: Convene a council of Claude subagents, each answering the same question from a different role (correctness, security, simplicity, devil's advocate, ...), then synthesize where they diverge. Use when the user names the council directly (ask the council, council review, what does the council think, second opinion) or when they are weighing competing approaches, stuck after several failed debugging attempts, or trading off security/performance/maintainability. Do NOT suggest it unprompted for simple tasks or questions with one clear answer.
 argument-hint: '[--model=opus|sonnet|haiku|fable] [--roles=list|preset] [--file=path] [--no-auto-context] [--no-artifact] "question"'
-allowed-tools: Agent, Read, Glob, Grep, Write, AskUserQuestion, Artifact, Bash(mkdir -p .claude/council-cache*), Bash(bash */skills/judge/build-report.sh *)
+allowed-tools: Agent, Read, Glob, Grep, Write, AskUserQuestion, Artifact, Bash(mkdir -p judge), Bash(bash */skills/judge/build-report.sh *)
 ---
 
 Convene the council on the question in `$ARGUMENTS`.
