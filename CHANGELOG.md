@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.9.16
+
+### Added
+- `context-init`, `context-engineering`, `loop-engineering` skills imported unchanged from zkfmapf123/context_skills v0.2.0. `/context-init` is now `/common:context-init`.
+
 ## 2026.9.15
 
 First real run (8 lenses, EKS/GKE/AKS) reviewed from the transcript and the

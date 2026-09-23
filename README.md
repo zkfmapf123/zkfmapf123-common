@@ -4,7 +4,18 @@ Claude Code plugin. One question, several Claude subagents each answering from
 a different role, then a synthesis of where they diverge. No API keys, no
 external providers — runs on your Claude Code subscription.
 
-Also the home for your own skills: one directory per skill under `skills/`.
+Also the home for shared skills: one directory per skill under `skills/`.
+
+| Skill | Invoke | What |
+|---|---|---|
+| judge | `/common:judge "question"` | Role-scoped Claude panel + synthesis + HTML report |
+| context-init | `/common:context-init` | Plant the context/loop discipline pointer in the project's `.claude/CLAUDE.md` (once per project) |
+| context-engineering | auto (or by name) | Where information lives: context window vs disk |
+| loop-engineering | auto (or by name) | Supervisor cycle for multi-session work, state in `.claude/state/` |
+
+`context-*` and `loop-engineering` are imported verbatim from
+[zkfmapf123/context_skills](https://github.com/zkfmapf123/context_skills); see that
+README for the full walkthrough.
 
 ## Usage
 

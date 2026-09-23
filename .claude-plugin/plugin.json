@@ -1,7 +1,7 @@
 {
   "name": "common",
-  "version": "2026.9.15",
-  "description": "Shared skills. Start with judge: several Claude subagents answer one question from different roles, then a synthesis of the spread.",
+  "version": "2026.9.16",
+  "description": "Shared skills: judge (role-scoped Claude panel), context-init / context-engineering / loop-engineering (state on disk, supervisor loops).",
   "author": {
     "name": "zkfmapf123",
     "email": "zkfmapf999@gmail.com"
@@ -9,5 +9,14 @@
   "homepage": "https://github.com/zkfmapf123/zkfmapf123-common",
   "repository": "https://github.com/zkfmapf123/zkfmapf123-common",
   "license": "MIT",
-  "keywords": ["judge", "multi-agent", "second-opinion", "roles", "skills"]
+  "keywords": [
+    "judge",
+    "multi-agent",
+    "second-opinion",
+    "roles",
+    "skills",
+    "context-engineering",
+    "loop-engineering",
+    "state-management"
+  ]
 }

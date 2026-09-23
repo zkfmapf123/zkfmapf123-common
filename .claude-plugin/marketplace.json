@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "common",
-      "description": "Shared skills: judge (role-scoped Claude panel) and whatever you add under skills/.",
+      "description": "Shared skills: judge (role-scoped Claude panel), context-init, context-engineering, loop-engineering.",
       "source": "./",
       "category": "productivity"
     }
