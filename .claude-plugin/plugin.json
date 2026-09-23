@@ -1,0 +1,13 @@
+{
+  "name": "common",
+  "version": "2026.9.15",
+  "description": "Shared skills. Start with judge: several Claude subagents answer one question from different roles, then a synthesis of the spread.",
+  "author": {
+    "name": "zkfmapf123",
+    "email": "zkfmapf999@gmail.com"
+  },
+  "homepage": "https://github.com/zkfmapf123/zkfmapf123-common",
+  "repository": "https://github.com/zkfmapf123/zkfmapf123-common",
+  "license": "MIT",
+  "keywords": ["judge", "multi-agent", "second-opinion", "roles", "skills"]
+}

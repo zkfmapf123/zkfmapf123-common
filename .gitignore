@@ -1,0 +1,12 @@
+# Council output
+.claude/council-cache/
+
+# Local per-developer settings
+.claude/*.local.*
+CLAUDE.local.md
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+*~
