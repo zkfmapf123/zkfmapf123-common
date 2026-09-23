@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.9.18
+
+### Changed
+- report-outputs: diagram style fixed — Excalidraw hand-drawn look (Caveat labels, rounded stroke-only boxes, 1.2–1.8px strokes), Korean body text IBM Plex Sans KR; follow-up explainer diagrams keep the same style.
+
 ## 2026.9.17
 
 ### Changed
