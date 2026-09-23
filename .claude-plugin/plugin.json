@@ -1,6 +1,6 @@
 {
   "name": "common",
-  "version": "2026.9.17",
+  "version": "1.0.0",
   "description": "Shared skills: judge (role-scoped Claude panel), context-init / context-engineering / loop-engineering (state on disk, supervisor loops).",
   "author": {
     "name": "zkfmapf123",

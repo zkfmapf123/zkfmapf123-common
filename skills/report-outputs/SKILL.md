@@ -53,6 +53,9 @@ Rules:
   numbers. Trim, never invent.
 - No claims the session did not verify. An unverified item goes under open
   items, labelled as such.
+- 다이어그램 스타일: Excalidraw 손그림 풍 — Caveat 폰트 라벨 + 둥근 모서리 박스
+  + 얇은 스트로크(1.2~1.8px) + fill 없는 외곽선. 본문 한글은 IBM Plex Sans KR.
+  후속 질문용 설명 그림도 같은 스타일 유지.
 
 ## Step 4: Publish and reply
 
