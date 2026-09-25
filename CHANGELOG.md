@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.9.25
+
+### Changed
+- report-outputs: key phrases emphasized with `<strong class="key|risk|ok">` + semantic color tokens (1–2 per paragraph, dark-mode contrast ≥4.5:1); Artifact publish is mandatory and uses `icon` instead of deprecated `favicon`.
+- report-outputs: highlighter `<mark>` (one sentence per section, `--mark` token) and a skim-path check — reading only `<mark>` + `<strong>` must convey the result.
+
 ## 2026.9.18
 
 ### Changed

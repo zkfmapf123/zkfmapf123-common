@@ -56,10 +56,28 @@ Rules:
 - 다이어그램 스타일: Excalidraw 손그림 풍 — Caveat 폰트 라벨 + 둥근 모서리 박스
   + 얇은 스트로크(1.2~1.8px) + fill 없는 외곽선. 본문 한글은 IBM Plex Sans KR.
   후속 질문용 설명 그림도 같은 스타일 유지.
+- 훑어읽기 경로: 본문이 길어도 강조 부분만 이어 읽으면 보고 내용이 전달돼야 함.
+  작성 후 `<mark>` 와 `<strong>` 만 순서대로 읽어 결론·근거 요지·위험이 잡히는지
+  확인하고, 안 잡히면 강조를 고침.
+- 형광펜: 섹션마다 "이것만 읽으면 되는" 문장 하나(최대 한 절)를 `<mark>` 로.
+  - 배경 토큰 `--mark`(반투명 노랑 계열, 다크 모드는 채도 낮추고 불투명도
+    조정). 글자색은 본문색 유지 — 형광펜 위에 색 글자 금지, 굵게는 허용.
+  - 섹션당 최대 1개. 결과 섹션은 필수.
+- 강조: 독자가 훑어만 봐도 요점이 잡히게, 핵심 구절을 `<strong>` + 색으로 표시.
+  - 대상: 결론·결정, 핵심 수치, 위험·미해결, 독자가 해야 할 행동. 문단당
+    1~2개, 단어·짧은 구절 단위. 문장 통째로 칠하지 않음. 강조가 많으면
+    강조가 아님.
+  - 색은 의미별 3종 토큰만: `--em-key`(결론·수치, 브랜드/파랑 계열),
+    `--em-risk`(위험·실패, 빨강/주황), `--em-ok`(완료·검증됨, 초록).
+    `:root` 에 정의하고 다크 모드에서 대비 4.5:1 이상 되게 재정의.
+  - 마크업: `<strong class="key|risk|ok">`. 색만으로 의미 전달 금지 —
+    굵기가 항상 같이 붙음.
+  - 코드·명령·경로는 강조 대신 `<code>`.
 
 ## Step 4: Publish and reply
 
-1. `Artifact` tool, favicon `📋`, `description` = one sentence on what the
+1. Always publish via the `Artifact` tool — a local file alone is not done.
+   `icon: "report"`, `description` = one sentence on what the
    report covers. If the tool is unavailable, give the HTML path instead.
 2. Reply in chat with exactly:
    - one line: the result
